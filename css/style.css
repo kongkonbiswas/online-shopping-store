@@ -6,6 +6,14 @@ body {
 .main{
   background-color: lightpink;
 }
+/* title style  */
+#title-text{
+  text-align: center;
+  color: chartreuse;
+}
+#title-colour{
+  color: aqua;
+}
 /* Search field Style  */
 .search-field {
   border: none;

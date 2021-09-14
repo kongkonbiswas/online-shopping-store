@@ -49,7 +49,7 @@ const updatePrice = (id, value) => {
   const convertedOldPrice = getInputValue(id);
   const convertPrice = parseFloat(value);
   const total = convertedOldPrice + convertPrice;
-  document.getElementById(id).innerText = (total);
+  document.getElementById(id).innerText = Math.abs(total.toFixed(2));
 };
 
 // set innerText function
