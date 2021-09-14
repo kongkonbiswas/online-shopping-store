@@ -1,7 +1,12 @@
+/* Common part style  */
 body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
+.main{
+  background-color: lightpink;
+}
+/* Search field Style  */
 .search-field {
   border: none;
   border-radius: 50px;
@@ -18,17 +23,19 @@ body {
   border-radius: 5px;
   margin: auto;
   margin-top: 50px;
+  margin-bottom: 50px;
   border-right: none;
 }
 .search-button {
   padding: 10px 50px;
   border-radius: 25px;
-  margin-left: 20px;
+  margin-left: 25px;
 }
+/* Products Information Style  */
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* border: 1px solid black; */
+  grid-gap: 10px;
   text-align: center;
   width: 100%;
   margin: auto;
@@ -38,19 +45,25 @@ body {
 .single-product {
   padding: 10px;
   transition: 0.6s;
+  background-color: bisque;
+  overflow-y: hidden;
+  height: 500px;
 }
 .single-product:hover {
   box-shadow: 4px 4px 7px gray;
   border-radius: 10px;
-  border: 1px solid cyan;
+  border: 1px solid gold;
+  background-color: springgreen;
 }
 .product-image {
   width: 150px;
   height: 150px;
 }
+/* Calculation Cart  */
 .cart {
+  background-color: whitesmoke;
   width: 350px;
-  /* border: 1px solid green; */
+  border: 1px solid grey;
   padding: 10px;
   box-shadow: 10px 10px 20px gray;
   border-radius: 5px;
@@ -60,6 +73,7 @@ body {
 .cart-main {
   padding-right: 30px;
 }
+/* Responsible Part  */
 @media only screen and (max-width: 768px) {
   #all-products {
     display: grid;
@@ -67,7 +81,6 @@ body {
   }
   .cart {
     width: 300px;
-    /* border: 1px solid green; */
     padding: 10px;
     box-shadow: 10px 10px 20px gray;
     border-radius: 5px;
